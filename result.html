@@ -50,25 +50,34 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <div class="site-header result d-flex justify-content-between">
+            <div class="site-header form-header result d-flex justify-content-between">
                 <div class="col-one resultPg">
                     <div class="position-relative">
                         <a href="./templates.html" class="link-left"><img src="./static/images/back.png" alt="anchor"> Templates</a>
                     </div>
                 </div>
                 <div class="col-one editPg">
-                    <div class="position-relative">
-
+                    <div class="redo-undo-buttons d-flex">
+                        <div class="redo-undo-btns active">
+                            <img src="./static/images/undo-enabled.png" alt="undo">
+                        </div>
+                        <div class="redo-undo-btns">
+                            <img src="./static/images/redo-enabled.png" alt="redo">
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-three text-right resultPg">
-                    <a href="javascript:shareIt();"><img src="./static/images/share.png" alt="share"></a>
+                <div class="col-two">
+                    <div class="toggle-button d-flex align-items-center text-right">
+                        <span>Text layer</span>
+                        <label class="switch">
+                            <input type="checkbox" id="hasTxt" checked="">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
                 <div class="col-three text-right editPg" style="min-height: 32px;">
                     <a href="javascript:doneDesign();">Done</a>
                 </div>
-
                 <script>
                     function shareIt() {
 
@@ -110,29 +119,6 @@
 </div>
 
 <div class="form-wrapper editPg">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="form-header d-flex justify-content-between">
-                    <div class="redo-undo-buttons d-flex">
-                        <div class="redo-undo-btns active">
-                            <img src="./static/images/undo-enabled.png" alt="undo">
-                        </div>
-                        <div class="redo-undo-btns">
-                            <img src="./static/images/redo-enabled.png" alt="redo">
-                        </div>
-                    </div>
-                    <div class="toggle-button d-flex align-items-center text-right">
-                        <span>Text layer</span>
-                        <label class="switch">
-                            <input type="checkbox" id="hasTxt" checked>
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- tabbedPanels starts -->
     <div class="tabbedPanels">
         <ul class="tabs">
@@ -143,93 +129,74 @@
         <div class="panelContainer">
             <!-- panel1 starts -->
             <div id="panel1" class="panel">
-                <!-- color-picker starts -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="color-box d-flex justify-content-center">
-                                <div class="single-color-item color-picker overflow-hidden black">
-                                    <label class="color-picker-icon" for="font_color">
-                                        <input class="colori" type="color" id="font_color" name="font_color" value="#D7D7D7" oninput1="alert(this.value);">
-                                    </label>
-                                </div>
-                                <div class="single-color-item addclass chngClr black" data-value="black"></div>
-                                <div class="single-color-item addclass chngClr red " data-value="red"></div>
-                                <div class="single-color-item addclass chngClr blue" data-value="blue"></div>
-                                <div class="single-color-item addclass chngClr white active" data-value="white"></div>
-                                <div class="single-color-item addclass chngClr yellow" data-value="yellow"></div>
-                                <div class="single-color-item addclass chngClr green" data-value="green"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- color-picker ends -->
-                <!-- range-slider-wrap starts -->
-                <div class="range-slider-wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="range-wrapper">
-                                    <input value="36" id="font_slider" type="range" max=200>
-                                    <div class="fill font_fill"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- range-slider ends -->
                 <div class="bottom-section">
                     <div class="container">
                         <div class="row">
                             <div class="col d-flex justify-content-between">
                                 <div class="font-change d-flex align-items-center position-relative">
                                     <div class="fonts-box">
-                                        <form method="POST">
-                                            <div class="single-font helvetica" data-font="Helvetica">
-                                                <input type="radio" id="font1" name="font" checked>
-                                                <label for="font1">Helvetica</label>
-                                            </div>
-                                            <div class="single-font georgia" data-font="Georgia">
-                                                <input type="radio" id="font2" name="font">
-                                                <label for="font2">Georgia</label>
-                                            </div>
-                                            <div class="single-font noteworthy" data-font="Noteworthy">
-                                                <input type="radio" id="font3" name="font">
-                                                <label for="font3">Noteworthy</label>
-                                            </div>
-                                            <div class="single-font chalkboard" data-font="Chalkboard">
-                                                <input type="radio" id="font4" name="font">
-                                                <label for="font4">Chlakboard</label>
-                                            </div>
-                                            <div class="single-font lato" data-font="Lato">
-                                                <input type="radio" id="font6" name="font">
-                                                <label for="font6">Lato</label>
-                                            </div>
-                                            <div class="single-font montserrat" data-font="Montserrat">
-                                                <input type="radio" id="font7" name="font">
-                                                <label for="font7">Montserrat</label>
-                                            </div>
-                                            <div class="single-font open-sans" data-font="Open Sans">
-                                                <input type="radio" id="font8" name="font">
-                                                <label for="font8">Open Sans</label>
-                                            </div>
-                                            <div class="single-font poppins" data-font="Poppins">
-                                                <input type="radio" id="font9" name="font">
-                                                <label for="font9">Poppins</label>
-                                            </div>
-                                            <div class="single-font roboto" data-font="Roboto">
-                                                <input type="radio" id="font10" name="font">
-                                                <label for="font10">Roboto</label>
-                                            </div>
-                                            <div class="single-font source-sans-pro" data-font="Source Sans Pro">
-                                                <input type="radio" id="font11" name="font">
-                                                <label for="font11">Source Sans Pro</label>
-                                            </div>
-                                        </form>
+                                        <div class="single-font helvetica" data-font="Helvetica">
+                                            <input type="radio" id="font1" name="font" checked>
+                                            <label for="font1">Helvetica</label>
+                                        </div>
+                                        <div class="single-font georgia" data-font="Georgia">
+                                            <input type="radio" id="font2" name="font">
+                                            <label for="font2">Georgia</label>
+                                        </div>
+                                        <div class="single-font noteworthy" data-font="Noteworthy">
+                                            <input type="radio" id="font3" name="font">
+                                            <label for="font3">Noteworthy</label>
+                                        </div>
+                                        <div class="single-font chalkboard" data-font="Chalkboard">
+                                            <input type="radio" id="font4" name="font">
+                                            <label for="font4">Chlakboard</label>
+                                        </div>
+                                        <div class="single-font lato" data-font="Lato">
+                                            <input type="radio" id="font6" name="font">
+                                            <label for="font6">Lato</label>
+                                        </div>
+                                        <div class="single-font montserrat" data-font="Montserrat">
+                                            <input type="radio" id="font7" name="font">
+                                            <label for="font7">Montserrat</label>
+                                        </div>
+                                        <div class="single-font open-sans" data-font="Open Sans">
+                                            <input type="radio" id="font8" name="font">
+                                            <label for="font8">Open Sans</label>
+                                        </div>
+                                        <div class="single-font poppins" data-font="Poppins">
+                                            <input type="radio" id="font9" name="font">
+                                            <label for="font9">Poppins</label>
+                                        </div>
+                                        <div class="single-font roboto" data-font="Roboto">
+                                            <input type="radio" id="font10" name="font">
+                                            <label for="font10">Roboto</label>
+                                        </div>
+                                        <div class="single-font source-sans-pro" data-font="Source Sans Pro">
+                                            <input type="radio" id="font11" name="font">
+                                            <label for="font11">Source Sans Pro</label>
+                                        </div>
                                     </div>
                                     <span class="arrow"></span>
                                     <div class="font-change-btn">
                                         <span><img src="./static/images/font-change.png" alt="font-change"></span>
                                     </div>
                                 </div>
+                                <!-- range-slider-wrap starts -->
+                                <div class="range-slider-wrap">
+                                    <div class="range-wrapper">
+                                        <input value="36" id="font_slider" type="range" max=200>
+                                        <div class="fill font_fill"></div>
+                                    </div>
+                                </div>
+                                <!-- range-slider ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- bottom-section ends -->
+                <div class="bottom-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex justify-content-between">
                                 <div class="font-alignment d-flex justify-content-between align-items-center">
                                     <div class="single-font-alignment" data-align="left">
                                         <span></span>
@@ -256,10 +223,41 @@
                                         <span></span>
                                     </div>
                                 </div>
+                                <div class="font-style d-flex justify-content-end">
+                                    <div class="single-font-style bold">
+                                        B
+                                    </div>
+                                    <div class="single-font-style italic">
+                                        I
+                                    </div>
+                                    <div class="single-font-style underline">
+                                        U
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div><!-- bottom-section ends -->
+                <!-- color-picker starts -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="color-box d-flex justify-content-center">
+                                <div class="single-color-item color-picker overflow-hidden black">
+                                    <label class="color-picker-icon" for="font_color">
+                                        <input class="colori" type="color" id="font_color" name="font_color" value="#D7D7D7" oninput1="alert(this.value);">
+                                    </label>
+                                </div>
+                                <div class="single-color-item addclass chngClr black" data-value="black"></div>
+                                <div class="single-color-item addclass chngClr red " data-value="red"></div>
+                                <div class="single-color-item addclass chngClr blue" data-value="blue"></div>
+                                <div class="single-color-item addclass chngClr white active" data-value="white"></div>
+                                <div class="single-color-item addclass chngClr yellow" data-value="yellow"></div>
+                                <div class="single-color-item addclass chngClr green" data-value="green"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- color-picker ends -->
             </div><!-- end panel 1 -->
             <!-- panel2 starts -->
             <div id="panel2" class="panel">
@@ -283,19 +281,13 @@
                         </div>
                     </div>
                 </div><!-- color-picker ends -->
-                <div class="range-slider-wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="range-wrapper">
-                                    <input value="0.8" id="outline_slider" type="range" max=10 step="0.1">
-                                    <div class="fill outline_fill"></div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- <div class="range-slider-wrap">
+                    <div class="range-wrapper">
+                        <input value="0.8" id="outline_slider" type="range" max=10 step="0.1">
+                        <div class="fill outline_fill"></div>
                     </div>
-                </div><!-- range-slider ends -->
-
+                </div> -->
+                <!-- range-slider ends -->
             </div> <!-- end panel 2 -->
             <div id="panel3" class="panel">
                 <!-- color-picker starts -->
@@ -319,18 +311,12 @@
                     </div>
                 </div><!-- color-picker ends -->
                 <div class="range-slider-wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="range-wrapper">
-                                    <input value="3" id="shadow_slider" type="range">
-                                    <div class="fill shadow_fill"></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="range-wrapper">
+                        <input value="3" id="shadow_slider" type="range">
+                        <div class="fill shadow_fill"></div>
                     </div>
-                </div><!-- range-slider ends -->
-
+                </div>
+                <!-- range-slider ends -->
             </div> <!-- end panel 3 -->
         </div>
     </div> <!-- tabbedPanels ends -->
