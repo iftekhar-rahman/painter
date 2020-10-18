@@ -743,6 +743,10 @@ label {display:block;margin:0}
 .range-slider-wrap{
     width: 270px;
 }
+.range-slider-wrap.outline, .range-slider-wrap.shadow {
+    width: 100%;
+    padding: 6px 15px 6px 15px;
+}
 .range-wrapper.disbale input[type="range"]::-webkit-slider-thumb {
     background: #555555 !important;
     cursor: not-allowed;
