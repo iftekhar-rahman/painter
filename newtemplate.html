@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Welcome to applier.com</title>
+    <meta name="description" content="welcome to applier.com" />
+    <meta name="keywords" content="applier.com" />
+    <meta property="og:title" content="Welcome to applier.com" />
+    <meta property="og:description" content="welcome to applier.com" />
+    <meta property="og:image" content="./static/images/applier.png" />
+    <meta name="twitter:title" content="Welcome to applier.com" />
+    <meta name="twitter:description" content="welcome to applier.com" />
+    <link rel="icon" type="image/ico" href="./static/images/favicon.ico" />
+    <link href="./static/css/style.css?20200930-5" rel="stylesheet" />
+    <link href="./static/css/jquery.auto-complete.css?20200930-5" rel="stylesheet" />
+    
+    <script>
+        var base_url = '.';
+        var cdn_url = './static';
+        var shareURL = '' || window.location.href;
+    </script>
+    <script src="./static/js/lib.js?20201006-13"></script>
+</head>
+
+<body style="height: 100%;overflow: hidden;width:100%;">
+    <div style="width: 100%;height: 100%;padding: 0;margin: 0;overflow-y: scroll;-webkit-overflow-scrolling: touch;position: absolute;top: 0;left: 0;z-index: 999999;">
+        <div class="site-wrap overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="site-header d-flex justify-content-between">
+                        <div class="col-one">
+                            <div class="position-relative">
+                                <a href="." class="link-left"><img src="./static/images/back.png" alt="anchor"> Home</a>
+                            </div>
+                        </div>
+                        <div class="text-center header-r">
+                            <h4>Create Template</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW Template Markup -->
+        <div class="template-section position-relative">
+            <!-- single-template-wrap starts  ===========First DIV============ -->
+            <div class="single-template-markup" style="background-color: #444444;display: block;height: 375px;background-image: url(./img/);" id="first-div">
+                <div class="image-box">
+                    <p>Suggested size: 1000x1000 pixels<br> Format:JPG</p>
+                </div>
+                <div class="template-buttons position-relative">
+                    <a href="#">Upload background Image</a>
+                    <a class="skip-link" href="#">Skip</a>
+                </div>
+            </div>
+            <!-- single-template-wrap ends -->
+
+            <!-- single-template-wrap starts ===========Second DIV============ -->
+            <div class="single-template-markup" style="background-color: #444444;display: none;height: 375px;background-image: url(./img/);" id="second-div">
+                <div class="image-box">
+                    <p>Suggested size: 1000x1000 pixels<br> Format:PNG with transparency</p>
+                </div>
+                <div class="template-buttons position-relative">
+                    <a href="#">Upload Foreground Image</a>
+                    <a class="skip-link" href="#">Skip</a>
+                </div>
+            </div>
+            <!-- single-template-wrap ends -->
+
+            <!-- single-template-wrap starts ===========Third DIV============ -->
+            <div class="single-template-markup" style="display: none;background: transparent;" id="third-div">
+                <div class="final-result-div" style="height: 375px;background-color: #444444;">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="template-buttons template-save-form">
+                    <div class="search-box">
+                        <div class="search-form position-relative">
+                            <label for="myInput1">
+                                <input id="myInput1" type="text" placeholder="Template Name"/>
+                            </label>
+                            <span onclick="document.getElementById('myInput1').value = ''" class="close-icon"><img src="static/images/clearsearch.png" alt="clearsearch"></span>
+                        </div>
+                        <button type="submit" value="submit">Save</button>
+                    </div>
+                </div><!-- template-save-form ends -->
+            </div>
+            <!-- single-template-wrap ends -->
+        </div>
+         <!-- NEW Template Markup ends -->
+
+    <!-- <div class="image-here-section">
+        <div class="uploaded-image" style="position: relative;overflow:hidden;font-size:0;">
+            <div id="tpl_html">
+                <img class="tpl_img_1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" style="position: relative;top: 0;left: 0;">
+                <div class="tpl_img_3" style="position: absolute;top: 0;left: 0;height:100%;width:100%;font-size: 0;vertical-align: middle;text-align: center;background-image: url(https://i-i-i.s3.ap-south-1.amazonaws.com/static/models/hero.png);background-repeat: no-repeat;background-position: center;background-size: contain;"></div>
+                <img class="tpl_img_2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" style="position: absolute;top: 0px;left: 0px;">
+            </div>
+            <div style="position: absolute;top: 100%;left: 50%;transform: translate(-50%, -100%);font-size:14px;width: 100%;height: 100%;">
+                <div class="categories-section h-100">
+                    <div class="image-here-section templates h-100">
+                        <div class="tpl_steps ift h-100" id="newtpl_step1" style="background:#444444" onclick="$('#tpl_file_bg').click();">
+                            <span class="icon"><img src="./static/images/upload.png" alt="largeImage"></span>
+                            <h4>Click here to upload background image</h4>
+                            <p>Suggested size: 1000x1000 pixels<br> Format:JPG</p>
+                        </div>
+                        <input id="tpl_file_bg" class="nodisply" type="file" accept="image/*" onchange="createTemplate('bg',this.files[0]);">
+
+                        <div class="tpl_steps disabledCont h-100" id="newtpl_step2" style="background:#44444495" onclick="$('#tpl_file_fg').click();">
+                            <span class="icon"><img src="./static/images/upload.png" alt="largeImage"></span>
+                            <h4>Click here to upload foreground image</h4>
+                            <p>Format: PNG with transparency</p>
+                        </div>
+                        <input id="tpl_file_fg" class="nodisply" type="file" accept="image/*" onchange="createTemplate('fg',this.files[0]);">
+                        <div class="tpl_steps disabledCont h-100" id="newtpl_step3" style="padding:10px;">Template Name <input id="newtpl_txt" type="text" value="" style="background-color:#FFF;color:#000;">
+                            <input id="newtpl_id" type="hidden" value="">
+                            <div style="padding-top: 20px;">
+                            </div>
+                            <span class="boxed-btn" onclick="createTemplate('txt',$('#newtpl_txt').val(),$('#newtpl_id').val());">Make a template</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <img src="" id="img_log" />
+</div>
+</div>
+
+<script>
+    window._rrCodeLoad = window._rrCodeLoad || [];
+    _rrCodeLoad.push(function() {
+        var tplid = queryST('id') || '';
+        if (tplid != '') {
+            chosen_img = 'https://i-i-i.s3.ap-south-1.amazonaws.com/static/models/hero.png';
+            chooseTemplate(tplid);
+        }
+    });
+</script>    </div>
+
+    <script  src="./static/js/jquery-3.5.1.min.js"></script>
+    <script  src="./static/js/lib.js?20201006-13"></script>
+    <script  src="./static/js/interact.min.js"></script>
+    <script  src="./static/js/move.js?20201006-13"></script>
+    <script  src="./static/js/main.js?20201006-13"></script>
+    <script  src="./static/js/edit.js?20201006-13"></script>
+    <script  src="./static/js/jquery.auto-complete.min.js"></script>
+    
+    <script>
+        function _rrCodeRun(arr) {
+            while (arr.length) {
+                var fnc = arr.splice(0, 1)[0];
+                fnc();
+            }
+        }
+        window._rrCodeSt = 0;
+        window._rrCodeLoad = window._rrCodeLoad || [];
+        window._rrCode = window._rrCode || [];
+        _rrCodeRun(_rrCodeLoad);
+    </script>
+</body>
+</html>
