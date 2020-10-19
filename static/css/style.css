@@ -1131,23 +1131,49 @@ label {display:block;margin:0}
     background: #555555;
     color: #555555;
 }
-.category-search img {
-    max-width: 20px;
+.category-search .search-icon img {
+    max-width: 15px;
+    top: 11px;
+    left: 12px;
+}
+.category-search .search-box img{
+    top: 9px;
+}
+.category-search .search-box .close-icon{
+    right: 0px;
+    top: 0px;
+    padding: 5px 17px;
+    height: 32px;
+}
+.category-search .search-box .close-icon img{
+    top: 6px;
+    left: 5px;
 }
 .category-search {
     border-right: 1px solid #676767;
-    padding: 6px 0px 2px 0;
     margin-right: 15px;
     width: 35px;
-    position: absolute;
+    position: relative;
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
+}
+.category-search .search-icon{
+    padding: 6px 0px 2px 0;
+    display: block;
+}
+.category-search.active{
+    flex-basis: 80%;
+}
+.category-search.active .search-box{
+    opacity: 1;
+    visibility: visible;
 }
 .single-category-item a {
     margin-right: 15px;
     padding-right: 15px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     position: relative;
 }
 .single-category-item.active a {
@@ -1155,6 +1181,9 @@ label {display:block;margin:0}
 }
 .category-carousel {
     flex-basis: 100%;
+}
+.category-carousel.active{
+    flex-basis: 20%;
 }
 .single-category-item a:after {
     position: absolute;
@@ -1167,25 +1196,27 @@ label {display:block;margin:0}
     border-radius: 50px;
 }
 .categories-section {
-    padding-left: 54px;
+    display: flex;
 }
 .category-area .search-box {
-    margin: 0;
     position: absolute;
-    left: 50px;
-    top: -3px;
-    z-index: 9;
-    width: 65%;
+    left: 0px;
+    top: 0px;
     opacity: 0;
     visibility: hidden;
+    z-index: 9;
+    margin: 0;
+    width: 94%;
     transition: all .3s ease;
 }
-.category-area .search-box.active{
+/* .category-area .search-box.active{
     opacity: 1;
     visibility: visible;
-}
+} */
 .categories-section .search-box input[type=text] {
     padding: 5px 10px 5px 35px;
+    height: 32px;
+    font-size: 15px;
 }
 .section-title{
     margin-bottom: 10px;

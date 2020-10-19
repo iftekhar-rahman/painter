@@ -328,16 +328,17 @@
         <div class="row">
             <div class="col">
                 <div class="categories-section position-relative minus-margin-15">
-                    <!-- <div class="search-box position-relative">
-                        <label for="myInput1">
-                            <input id="searchTxt" type="text" placeholder="Search" onkeyup="searchKeypressed(event,this.value);" autocomplete="off">
-                        </label>
-                        <img src="./static/images/search.png" alt="search">
-                        <span onclick="document.getElementById('searchTxt').value = '';this.style.display='none';" class="close-icon" style="display:none;"><img src="./static/images/clearsearch.png" alt="clearsearch"></span>
-                    </div> -->
                     <div class="category-search">
-                        <span><img src="static/images/search.png" alt=""></span>
+                        <span class="search-icon"><img src="static/images/search.png" alt=""></span>
+                        <div class="search-box position-relative">
+                            <label for="myInput1">
+                                <input id="searchTxt" type="text" placeholder="Search" onkeyup="searchKeypressed(event,this.value);" autocomplete="off">
+                            </label>
+                            <img src="./static/images/search.png" alt="search">
+                            <span onclick="document.getElementById('searchTxt').value = '';this.style.display='none';" class="close-icon" style="display:none;"><img src="./static/images/clearsearch.png" alt="clearsearch"></span>
+                        </div>
                     </div>
+                    
                     <div class="category-carousel flex">
                         <div class="single-category-item flex-item text-center">
                             <a href="#">Category 1</a>
