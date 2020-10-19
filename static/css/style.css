@@ -282,7 +282,7 @@ label {display:block;margin:0}
     opacity: 0.5;
 }
 .toggle-button {
-    line-height: 31px;
+    line-height: 34px;
 }
 .toggle-button .switch {
     position: relative;
@@ -1238,6 +1238,16 @@ label {display:block;margin:0}
     }
     .featured-carousel.tmpS .single-carousel-item {
         height: 145px;
+    }
+    .site-header .col-one {
+        flex-basis: 28%;
+    }
+    .site-header .col-two {
+        padding-left: 10px;
+        flex-basis: 52%;
+    }
+    .form-header .redo-undo-buttons .redo-undo-btns {
+        margin-right: 10px;
     }
 }
 /* @media (min-width:768px) {
