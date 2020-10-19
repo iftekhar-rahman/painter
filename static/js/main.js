@@ -188,3 +188,8 @@ function searchKeypressed(evt,val){
     $('.close-icon').show();
   }
 }
+
+
+// $(".category-search").on("click", function(){
+//   $(".search-box").addClass("active");
+// });
