@@ -190,6 +190,9 @@ function searchKeypressed(evt,val){
 }
 
 
-$(".category-search .search-box button[type=submit]").on("click", function(){
-  $(".category-search").addClass("active");
+$(".search-trigger").on("click", function(){
+  $(".categories-section").addClass("active");
+});
+$(".close-search-box").on("click", function(){
+  $(".categories-section").removeClass("active");
 });
