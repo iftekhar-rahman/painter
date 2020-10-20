@@ -1162,7 +1162,7 @@ label {display:block;margin:0}
 .categories-section.active .category-search {
     width: 100%;
     padding-right: 60px;
-    padding-left: 17px;
+    padding-left: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -1180,13 +1180,18 @@ label {display:block;margin:0}
     left: -56px;
     border-right: 1px solid #676767;
 } */
-.search-trigger {
+.categories-section .search-trigger {
     width: 35px;
     display: inline-block;
     border-right: 1px solid #676767;
     padding-top: 7px;
     height: 32px;
     cursor: pointer;
+    transition: all .7s ease;
+}
+.categories-section.active .search-trigger {
+    width: 0;
+    border-right: 0;
 }
 .search-trigger img{
     max-width: 16px;
