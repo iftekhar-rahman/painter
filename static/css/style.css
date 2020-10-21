@@ -353,8 +353,8 @@ label {display:block;margin:0}
     background-color: #3b3b3e;
     border-radius: 10px;
     margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
 }
 .tabbedPanels .tabs li {
     -ms-flex-preferred-size: 33.3333%;
@@ -745,7 +745,7 @@ label {display:block;margin:0}
 }
 .range-slider-wrap.outline, .range-slider-wrap.shadow {
     width: 100%;
-    padding: 4px 15px 4px 15px;
+    padding: 4px 0px 4px 0px;
 }
 .range-wrapper.disbale input[type="range"]::-webkit-slider-thumb {
     background: #555555 !important;
@@ -806,6 +806,7 @@ label {display:block;margin:0}
 .toggle-button.disbale {
     position: relative;
     z-index: 999999;
+    color: #555555;
 }
 
 
@@ -858,7 +859,7 @@ label {display:block;margin:0}
     font-size: 17px;
     color: #808080;
     text-align: center;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 .image-here-section.templates {
 }
@@ -1268,7 +1269,32 @@ label {display:block;margin:0}
 .section-title{
     margin-bottom: 10px;
 }
+.form-header.editPg {
+    height: 34px;
+    padding: 0px 0 0;
+    margin: 5px 0 10px 0;
+}
+.left-arrow {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 9;
+}
+.left-arrow img {
+    max-width: 30px;
+}
+.done-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 70px;
+    height: 28px;
+    background: #fff;
+    z-index: 9;
+    border-radius: 50px;
+}
 
+.done-btn a {color: #000;line-height: 28px;text-transform: uppercase;font-weight: 600;font-size: 14px;}
 
 
 
